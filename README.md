@@ -33,7 +33,7 @@ npm install --save-dev friendly-errors-webpack-plugin
 npm install -D webpackbar
 npm install -D optimize-css-assets-webpack-plugin
 npm install -D handlebars handlebars-loader
-npm install --save gh-pages
+npm install --save-dev gh-pages
 Указываем скрипты в файле package.json раздел "scripts":
 "scripts": {
 "start": "webpack-dev-server --env.mode development",
