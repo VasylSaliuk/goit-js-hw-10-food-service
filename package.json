@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/VasylSaliuk/myFirstWebPack/issues"
   },
-  "homepage": "https://github.com/paris-school/webpack_bundle#readme",
+  "homepage": "https://vasylsaliuk.github.io/goit-js-hw-10-food-service/",
   "devDependencies": {
     "@babel/core": "^7.12.8",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
