@@ -1,10 +1,9 @@
+import refs from "./refs.js";
 import menu from '../menu.json';
 import menuCardsTpl from '../templates/menuCards.hbs';
 import filterTpl from '../templates/filter.hbs';
 
-const menuCardList = document.querySelector('.js-menu');
-const filterBar = document.querySelector('.filter-bar');
-
+const {menuCardList, filterBar} = refs;
 filterBar.insertAdjacentHTML('beforeend', createfilterMarkup(menu));
 filterBar.addEventListener('click', onButtonClick);
 createMarkup(menu);
