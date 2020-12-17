@@ -5,20 +5,22 @@ const theme = {
     DARK: 'dark-theme',
 };
 
-body.classList.add(theme.LIGHT);
 saveTheme();
-
 themeSwitcher.addEventListener('change', onToggle);
 
-function onToggle(e) {
+function onToggle(evt) {
     body.classList.toggle(theme.DARK);
-    localStorage.setItem('themeDARK', e.target.checked);
+    body.classList.toggle(theme.LIGHT);
+    localStorage.setItem('themeDARK', evt.target.checked);
 };
+
 function saveTheme() {
   const savedToggle = localStorage.getItem('themeDARK');
 
   if (savedToggle === 'true') {
       body.classList.toggle(theme.DARK);
       themeSwitcher.checked = true;
+  } else {
+    body.classList.add(theme.LIGHT);
   }
 };
