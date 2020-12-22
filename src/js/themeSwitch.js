@@ -1,5 +1,6 @@
-const themeSwitcher = document.getElementById('theme-switch-toggle');
-const body = document.querySelector('body');
+import refs from "./refs.js";
+
+const {body, themeSwitcher} = refs;
 const theme = {
     LIGHT: 'light-theme',
     DARK: 'dark-theme',

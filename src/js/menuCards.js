@@ -28,19 +28,14 @@ function onButtonClick(evt) {
     if (!evt.target.classList.contains('tag-list__item')) {
         return;
     }
-    let result = [];
     const value = evt.target.textContent;
     if (evt.target.classList.contains('all')) {
         menuCardList.innerHTML = '';
         createMarkup(menu);
     } else {
-            menu.filter(item => {
-            if (item.ingredients.includes(value)) {
-                result.push(item);
-            }
-        });
+        const result = menu.filter(item =>
+            item.ingredients.includes(value));
         menuCardList.innerHTML = '';
         createMarkup(result);
-        result = [];
     }
 };
